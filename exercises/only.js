@@ -1,3 +1,10 @@
+const programStartTime = new Date().getTime();
+
+const print = (text) => {
+    const now = new Date().getTime();
+    console.log(`${text} (after ${now - programStartTime} ms)`)
+};
+
 function onlyVersion1(object, propertyNames) {
     const entries = Object.entries(object);
     const result = {};
@@ -7,6 +14,7 @@ function onlyVersion1(object, propertyNames) {
             result[propertyName] = propertyValue;
         }
     });
+    print(result);
     return result;
 };
 
@@ -44,8 +52,8 @@ const numbers = {
 }
 
 console.log(
-    'onlyVersion3(numbers, ["b", "c", "k"])',
-    onlyVersion3(numbers, ["b", "c", "k"])
+    'onlyVersion1(numbers, ["b", "c", "k"])',
+    onlyVersion1(numbers, ["b", "c", "k"])
 );
 
 /*console.log('Object.values(numbers)', Object.values(numbers));

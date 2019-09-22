@@ -3,9 +3,11 @@
   "description": "WarsawJS Workshop #36 JavaScript exercises.",
   "license": "MIT",
   "scripts": {
-    "nodemon": "nodemon"
+    "nodemon": "nodemon",
+    "plato": "plato -r -t 'WarsawJS Workshop #35' -d ./plato src"
   },
   "dependencies": {
-    "nodemon": "^1.19.2"
+    "nodemon": "^1.19.2",
+    "plato": "^1.7.0"
   }
 }
