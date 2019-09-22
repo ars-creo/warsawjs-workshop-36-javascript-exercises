@@ -1,0 +1,8 @@
+config:
+  target: "only.js"
+scenarios:
+  - engine: "socketio"
+    flow:
+      - emit:
+          channel: "users::find"
+      - think: 60

@@ -8,5 +8,3 @@ const person = {
 
 person.age = 70;
 person['place of birth'] = 'Warszawa';
-
-console.log('person', person);
